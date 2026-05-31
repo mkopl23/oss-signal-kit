@@ -1,0 +1,41 @@
+{
+  "name": "oss-signal-kit",
+  "version": "0.1.0",
+  "description": "Generate read-only OSS maintainer evidence packs from public GitHub repository signals.",
+  "type": "module",
+  "homepage": "https://github.com/mkopl23/oss-signal-kit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkopl23/oss-signal-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkopl23/oss-signal-kit/issues"
+  },
+  "bin": {
+    "oss-signal-kit": "./bin/oss-signal-kit.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check bin/oss-signal-kit.js && node --check src/cli.js && node --check src/github.js && node --check src/report.js && node --check src/signals.js"
+  },
+  "keywords": [
+    "opensource",
+    "maintainer",
+    "github",
+    "metrics",
+    "codex",
+    "grants",
+    "evidence"
+  ],
+  "author": "yuma6",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
+}
